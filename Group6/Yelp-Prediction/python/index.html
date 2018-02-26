@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yelp Data Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Predict your Restaurant's success.</h2>
+  <div id="result"></div>
+  <form>
+    <div class="form-group" style="width:40%">
+      <label for="sel1">WiFi:</label>
+      <select class="form-control" id="sel1">
+        <option value="0"></option>
+        <option value="1">Free</option>
+        <option value="3">Paid</option>
+        <option value="0">No WiFi</option>
+      </select>
+      <br>
+      <label for="sel1">Type of Meal (Multiple):</label>
+      <select multiple class="form-control" id="sel2">
+        <option value="0"></option>
+        <option value="32">Breakfast</option>
+        <option value="33">Brunch</option>
+        <option value="34">Dessert</option>
+        <option value="35">Dinner</option>
+        <option value="36">Latenight</option>
+        <option value="37">Lunch</option>
+      </select>
+      <br>
+      <label for="sel1">Ambience:</label>
+      <select multiple class="form-control" id="sel3">
+        <option value="0"></option>
+        <option value="1">Casual</option>
+        <option value="2">Classy</option>
+        <option value="3">Divey</option>
+        <option value="4">Hipster</option>
+        <option value="5">Intimate</option>
+        <option value="6">Romantic</option>
+        <option value="7">Touristy</option>
+        <option value="8">Trendy</option>
+        <option value="9">Upscale</option>
+      </select>
+      <br>
+      <label for="sel1">Bike Parking:</label>
+      <select class="form-control" id="sel4">
+        <option value="0"></option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <br>
+      <label for="sel1">Wheelchair Accessible:</label>
+      <select class="form-control" id="sel5">
+        <option value="0"></option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <br>
+      <label for="sel1">Price Range:</label>
+      <select class="form-control" id="sel6">
+        <option value="0"></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br>
+      <label for="sel1">Serves Alcohol:</label>
+      <select class="form-control" id="sel7">
+        <option value="0"></option>
+        <option value="1">Beer and Wine</option>
+        <option value="2">Full Bar</option>
+        <option value="3">No Alcohol</option>
+      </select>
+      <br>
+      <label for="sel1">Noise Level:</label>
+      <select class="form-control" id="sel8">
+        <option value="0"></option>
+        <option value="1">Average</option>
+        <option value="2">Loud</option>
+        <option value="3">Quiet</option>
+        <option value="4">Very Loud</option>
+      </select>
+      <br>
+      <label for="sel1">Caters:</label>
+      <select class="form-control" id="sel9">
+        <option value="0"></option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+      </select>
+      <br>
+      <label for="sel1">Business Parking:</label>
+      <select multiple class="form-control" id="sel10">
+        <option value="0"></option>
+        <option value="21">Garage</option>
+        <option value="22">Lot</option>
+        <option value="23">Street</option>
+        <option value="24">Valet</option>        
+        <option value="25">Validated</option>
+      </select>
+      <br>
+      <button type="submit" onclick="return a()" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
